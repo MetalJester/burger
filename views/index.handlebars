@@ -3,7 +3,7 @@
 <h2>Burger Menu</h2>
 
 <ul>
-  {{#each burgers}}
+  {{#each burger}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/unless}}
@@ -13,7 +13,7 @@
 <h2>Burgers that have been eaten</h2>
 
 <ul>
-  {{#each burgers}}
+  {{#each burger}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/if}}
@@ -25,7 +25,7 @@
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="burger_name" value="0">
+    <input type="text" id="ca" name="burger_name" value="What burger do you crave?">
   </div>
 
   <button type="submit">Add Burger</button>
